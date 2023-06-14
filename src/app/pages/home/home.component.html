@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+
+<button routerLink="/pages/contact">MOVE TO CONTACT</button>
+<button routerLink="/pages/about">MOVE TO ABOUT</button>
+<button routerLink="/auth/login">MOVE TO LOGIN</button>
+
+
+
+
+
+<form action="" [formGroup]="userForm">
+
+  <label for="">Name</label>
+  <input formControlName="name" type="text">
+  <label for="">email</label>
+  <input formControlName="email" type="text">
+  <label for="">phone</label>
+  <input formControlName="phone" type="number">
+  <!-- <label for="">p</label>
+  <input type="text"> -->
+  <button type="submit" (click)="submit()">SUBMIT</button>
+
+</form>
+<app-footer></app-footer>
